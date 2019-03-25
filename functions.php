@@ -8,7 +8,8 @@ function weraw_style_parent() {
 	//chargement de la typo depuis google fonts
 	wp_enqueue_style('googlefonts-weraw', 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
 
-		wp_enqueue_style('googlefonts-weraw2', 'https://fonts.googleapis.com/css?family=Inconsolata');
+ 	//chargement de la typo-corps depuis google fonts
+		wp_enqueue_style('googlefonts-weraw', 'https://fonts.googleapis.com/css?family=Inconsolata');
 
 
 }
