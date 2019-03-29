@@ -1,5 +1,9 @@
 <?php
 
+/*
+ Charger les styles CSS
+ */
+
 function weraw_style_parent() {
 
 	// enqueue parent styles
@@ -11,9 +15,7 @@ function weraw_style_parent() {
  	//chargement de la typo-corps depuis google fonts
 		wp_enqueue_style('googlefonts-weraw', 'https://fonts.googleapis.com/css?family=Inconsolata');
 
-
 }
-
 
 add_action('wp_enqueue_scripts', 'weraw_style_parent');
 
@@ -33,3 +35,9 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 		// and return the new full result
 		return $existing_mimes;
 }
+
+/*
+ Définir les ligues
+ */
+
+require_once('ligues.php');

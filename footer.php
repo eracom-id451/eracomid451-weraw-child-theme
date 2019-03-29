@@ -13,32 +13,59 @@
 
 <footer id="colophon" class="site-footer">
 
+  <?php
+
+  // définir les ligues
+
+  $weraw_ligues = weraw_ligues();
+
+  ?>
 
   <section class="interligue">
-      <h2>Coéquipier de ligue</h2>
-      <ul class="trombi ligue">
-        <li>
-          <div class="losange">
-            <img src="superhero-deux.png" alt="Super hero-UN">
-          </div>
-          <p>Jean Jaque</p>
-        </li>
-        <li>
-          <div class="losange">
-            <img src="superhero-trois.png" alt="Super hero-UN">
-          </div>
-          <p>Claude vincent</p>
-        </li>
-        <li>
-          <div class="losange">
-            <img src="superhero-deux.png" alt="Super hero-UN">
-          </div>
-          <p>Jean Jaque</p>
-        </li>
 
-      </ul>
+      <?php 
+
+      // Coéquipier de ligue
+
+      // obtenir le nom de domaine du serveur actuel avec $_SERVER['HTTP_HOST']
+      // vérifier s'il est dans une des ligues.
+      // si oui, produire la liste des AUTRES personnages
+
+      foreach ($weraw_ligues as $nom_ligue => $ligue) {
+
+        $key = array_search($_SERVER['HTTP_HOST'], array_column($ligue, 'url'));
+
+        if ( $key === 0 || $key > 0 ) {
+
+          // echo '<h2>'. $nom_ligue .':</h2>';
+          ?>
+          <h2>Coéquipier de ligue</h2>
+          <ul class="trombi ligue">
+          <?php
+
+          foreach ($ligue as $i => $perso) {
+
+            echo '<li>
+            <a href="https://'.$perso["url"].'">
+              <div class="losange">
+                <img src="'.$perso["image"].'" alt="Super hero-UN">
+              </div>
+              <p>'.$perso["name"].'</p>
+            </a>
+          </li>';
+
+          }
+
+          echo '</ul>';
+
+        } // fin ligue
+
+      } // fin coéquipiers
+
+        ?>
+
       <aside>
-      <h2>Les autres héros</h2>
+      <h2>Les autres hros</h2>
       <ul class="trombi autres">
         <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
         <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
