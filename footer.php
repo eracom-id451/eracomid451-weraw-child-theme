@@ -23,7 +23,7 @@
 
   <section class="interligue">
 
-      <?php 
+      <?php
 
       // Coéquipier de ligue
 
@@ -48,7 +48,7 @@
             echo '<li>
             <a href="https://'.$perso["url"].'">
               <div class="losange">
-                <img src="'.$perso["image"].'" alt="Super hero-UN">
+                <img src="'. get_stylesheet_directory_uri().'/medias/heros/'.$perso["image"].'" alt="Super hero-UN">
               </div>
               <p>'.$perso["name"].'</p>
             </a>

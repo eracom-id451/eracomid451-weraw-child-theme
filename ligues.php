@@ -3,7 +3,7 @@
 function weraw_ligues() {
 
 	$weraw_ligues = array(
-    "Ligue UN" => array(
+    "Appengers" => array(
       array(
         "name" => "SuperPerso", // le nom du personnage
         "image"=>"supermachin.png", // placer l'image dans medias/vignettes, format x sur x.
@@ -15,7 +15,7 @@ function weraw_ligues() {
         "url"=>"supermachin2.example.com",
       ),
     ),
-    "Ligue DEUX" => array(
+    "Doctype" => array(
       array(
         "name" => "SuperPerso3",
         "image"=>"supermachin3.png",
@@ -26,7 +26,19 @@ function weraw_ligues() {
         "image"=>"supermachin4.png",
         "url"=>"ms-studio:8888",
       )
-    )
+    ),
+		"Hybrid" => array(
+			array(
+				"name" => "Pathfinder",
+				"image"=>"pathfinder_hero.png",
+				"url"=>"superhero.tanguybula.com",
+			),
+			array(
+				"name" => "SuperPerso4",
+				"image"=>"supermachin4.png",
+				"url"=>"ms-studio:8888",
+			)
+		),
   );
 
 	return $weraw_ligues;
