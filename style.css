@@ -11,9 +11,24 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-body {
+body .site-content, 
+body .site-header,
+body .site-footer {
 	font-family: 'Josefin Sans', sans-serif;
 	font-family: 'Inconsolata', monospace;
+}
+
+h1.entry-title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h3.comments-title,
+h3.comment-reply-title {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .site-title-wrap{
