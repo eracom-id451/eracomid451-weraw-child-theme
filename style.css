@@ -35,9 +35,20 @@ h3.comment-reply-title {
 	background-image: url(medias/logo_weraw.svg);
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 }
-
+.site-header{
+	background: #201F1E;
+}
+.top-navigation .container{
+	max-width: none;
+}
+.top-navigation .container .site-identity{
+	padding: 10px 0;
+}
+.fa-search::before{
+	content: none;
+}
 /* Block qui concerne la navigation entre les différents sites de la franchise */
 
 .interligue {
