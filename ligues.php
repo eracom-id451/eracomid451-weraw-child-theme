@@ -9,17 +9,22 @@ function weraw_ligues() {
         "image"=>"supermachin.png", // placer l'image dans medias/vignettes, format x sur x.
         "url"=>"supermachin.example.com", // sans le https://
       ),
+			array(
+        "name" => "Hackerman",
+        "image"=>"supermachin3.png",
+        "url"=>"supermachin3.example.com",
+      ),
       array(
         "name" => "Afterburner",
         "image"=>"supermachin2.png",
-        "url"=>"supermachin2.example.com",
+        "url"=>"hero.loannjuillerat.ch",
       ),
     ),
     "Doctype" => array(
       array(
         "name" => "Zindex",
         "image"=>"supermachin3.png",
-        "url"=>"supermachin3.example.com",
+        "url"=>"superheros.diano-dimatteo.ch",
       ),
 			array(
         "name" => "Bordercollapse",
@@ -29,19 +34,19 @@ function weraw_ligues() {
 			array(
         "name" => "Opacity",
         "image"=>"supermachin3.png",
-        "url"=>"supermachin3.example.com",
+        "url"=>"superheros.tenzinlama.ch",
       ),
       array(
         "name" => "Dropshadow",
         "image"=>"supermachin4.png",
-        "url"=>"ms-studio:8888",
+        "url"=>"weraw.jonas-paul.ch",
       )
     ),
 		"Hybrid" => array(
 			array(
 				"name" => "Eraser",
 				"image"=>"pathfinder_hero.png",
-				"url"=>"superhero.tanguybula.com",
+				"url"=>"eraser.tenzinlama.ch",
 			),
 			array(
 				"name" => "Pathfinder",
