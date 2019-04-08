@@ -5,29 +5,44 @@ function weraw_ligues() {
 	$weraw_ligues = array(
     "Appengers" => array(
       array(
-        "name" => "SuperPerso", // le nom du personnage
+        "name" => "CaptainMalware", // le nom du personnage
         "image"=>"supermachin.png", // placer l'image dans medias/vignettes, format x sur x.
         "url"=>"supermachin.example.com", // sans le https://
       ),
       array(
-        "name" => "SuperPerso2",
+        "name" => "Afterburner",
         "image"=>"supermachin2.png",
         "url"=>"supermachin2.example.com",
       ),
     ),
     "Doctype" => array(
       array(
-        "name" => "SuperPerso3",
+        "name" => "Zindex",
+        "image"=>"supermachin3.png",
+        "url"=>"supermachin3.example.com",
+      ),
+			array(
+        "name" => "Bordercollapse",
+        "image"=>"supermachin3.png",
+        "url"=>"supermachin3.example.com",
+      ),
+			array(
+        "name" => "Opacity",
         "image"=>"supermachin3.png",
         "url"=>"supermachin3.example.com",
       ),
       array(
-        "name" => "SuperPerso4",
+        "name" => "Dropshadow",
         "image"=>"supermachin4.png",
         "url"=>"ms-studio:8888",
       )
     ),
 		"Hybrid" => array(
+			array(
+				"name" => "Eraser",
+				"image"=>"pathfinder_hero.png",
+				"url"=>"superhero.tanguybula.com",
+			),
 			array(
 				"name" => "Pathfinder",
 				"image"=>"pathfinder_hero.png",
