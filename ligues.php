@@ -14,6 +14,11 @@ function weraw_ligues() {
         "image"=>"supermachin3.png",
         "url"=>"supermachin3.example.com",
       ),
+			array(
+        "name" => "Troisdé",
+        "image"=>"supermachin3.png",
+        "url"=>"super.mariusparisod.ch",
+      ),
       array(
         "name" => "Afterburner",
         "image"=>"supermachin2.png",
@@ -29,7 +34,7 @@ function weraw_ligues() {
 			array(
         "name" => "Bordercollapse",
         "image"=>"supermachin3.png",
-        "url"=>"supermachin3.example.com",
+        "url"=>"HEROS-BorderCollapse.png",
       ),
 			array(
         "name" => "Opacity",
