@@ -34,9 +34,9 @@ function weraw_ligues() {
 				"url"=>"superhero.tanguybula.com",
 			),
 			array(
-				"name" => "SuperPerso4",
+				"name" => "Wand",
 				"image"=>"supermachin4.png",
-				"url"=>"ms-studio:8888",
+				"url"=>"hero.eduardo-espinoza.ch",
 			)
 		),
   );
