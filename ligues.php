@@ -73,7 +73,7 @@ function weraw_ligues() {
 
 add_filter( 'body_class','weraw_bodyclass' );
 function weraw_bodyclass( $classes ) {
- 
+ 	  $weraw_ligues = weraw_ligues();
     foreach ($weraw_ligues as $nom_ligue => $ligue) {
 
         $key = array_search($_SERVER['HTTP_HOST'], array_column($ligue, 'url'));
@@ -84,7 +84,7 @@ function weraw_bodyclass( $classes ) {
 
         }
     }
-     
+
     return $classes;
-     
+
 }
