@@ -17,7 +17,7 @@ function weraw_ligues() {
 			array(
         "name" => "Troisdé",
         "image"=>"HEROS-troisde.png",
-        "url"=>"super.mariusparisod.ch",
+        "url"=>"supermariusparisod.local",
       ),
       array(
         "name" => "Afterburner",

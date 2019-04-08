@@ -44,16 +44,16 @@
           <?php
 
           foreach ($ligue as $i => $perso) {
-
-            echo '<li>
-            <a href="https://'.$perso["url"].'">
-              <div class="losange">
-                <img src="'. get_stylesheet_directory_uri().'/medias/heros/'.$perso["image"].'" alt="Super hero-UN">
-              </div>
-              <p>'.$perso["name"].'</p>
-            </a>
-          </li>';
-
+							if($perso["url"] != $_SERVER['HTTP_HOST']){
+								echo '<li>
+		            <a href="https://'.$perso["url"].'">
+		              <div class="losange">
+		                <img src="'. get_stylesheet_directory_uri().'/medias/heros/'.$perso["image"].'" alt="Super hero-UN">
+		              </div>
+		              <p>'.$perso["name"].'</p>
+		            </a>
+		          </li>';
+							}
           }
 
           echo '</ul>';
