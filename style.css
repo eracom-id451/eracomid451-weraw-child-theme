@@ -11,18 +11,38 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-body {
-	font-family: 'Josefin Sans', sans-serif;
+body .site-content, 
+body .site-header,
+body .site-footer {
 	font-family: 'Inconsolata', monospace;
+}
+
+h1.entry-title, 
+h2.entry-title, 
+.site-footer h2,
+h3.comments-title,
+h3.comment-reply-title {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .site-title-wrap{
 	background-image: url(medias/logo_weraw.svg);
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 }
-
+.site-header{
+	background: #201F1E;
+}
+.top-navigation .container{
+	max-width: none;
+}
+.top-navigation .container .site-identity{
+	padding: 10px 0;
+}
+.fa-search::before{
+	content: none;
+}
 /* Block qui concerne la navigation entre les différents sites de la franchise */
 
 .interligue {
