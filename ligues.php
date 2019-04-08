@@ -68,3 +68,23 @@ function weraw_ligues() {
 
 	return $weraw_ligues;
 }
+
+// Ajout d'une classe au "body" en fonction de la ligue actuelle...
+
+add_filter( 'body_class','weraw_bodyclass' );
+function weraw_bodyclass( $classes ) {
+ 
+    foreach ($weraw_ligues as $nom_ligue => $ligue) {
+
+        $key = array_search($_SERVER['HTTP_HOST'], array_column($ligue, 'url'));
+
+        if ( $key === 0 || $key > 0 ) {
+
+          $classes[] = "ligue-".strtolower($nom_ligue);
+
+        }
+    }
+     
+    return $classes;
+     
+}
