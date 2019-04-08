@@ -34,6 +34,7 @@
       foreach ($weraw_ligues as $nom_ligue => $ligue) {
 
         $key = array_search($_SERVER['HTTP_HOST'], array_column($ligue, 'url'));
+        $bypass[] = $_SERVER['HTTP_HOST'];
 
         if ( $key === 0 || $key > 0 ) {
 
@@ -53,6 +54,7 @@
 		              <p>'.$perso["name"].'</p>
 		            </a>
 		          </li>';
+              $bypass[] = $perso["url"];
 							}
           }
 
@@ -65,18 +67,38 @@
         ?>
 
       <aside>
-      <h2>Les autres hros</h2>
-      <ul class="trombi autres">
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
-        <li><div class="losange"><img src="superhero-deux.png" alt="coucou"></div></li>
+      <h2>Les autres héros</h2>
+      <?php 
 
-      </ul>
+      // afficher tous les autres...
+      // combiner 
+      $all_heroes = array();
+    
+      foreach ($weraw_ligues as $nom_ligue => $ligue) {
+        if ( is_array( $ligue ) ) {
+          $all_heroes = array_merge($all_heroes, $ligue);
+        }
+      }
+      if ( is_array( $all_heroes ) ) {
+        echo ' <ul class="trombi autres">';
+        foreach ($all_heroes as $i => $perso) {
+
+            if( !in_array( $perso["url"], $bypass ) ) {
+                echo '<li>
+                <a href="https://'.$perso["url"].'">
+                  <div class="losange">
+                    <img src="'. get_stylesheet_directory_uri().'/medias/heros/'.$perso["image"].'" alt="Super hero-UN">
+                  </div>
+                  <p>'.$perso["name"].'</p>
+                </a>
+              </li>';
+              }
+            }
+
+        echo '</ul>';
+      }
+
+      ?>
     </aside>
 
   </section>
