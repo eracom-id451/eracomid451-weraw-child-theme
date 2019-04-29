@@ -43,7 +43,7 @@ function weraw_ligues() {
       ),
       array(
         "name" => "Dropshadow",
-        "image"=>"HEROS-DropShadow.png"
+        "image"=>"HEROS-DropShadow.png",
         "url"=>"weraw.jonas-paul.ch",
       )
     ),
