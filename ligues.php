@@ -34,7 +34,7 @@ function weraw_ligues() {
 			array(
         "name" => "Bordercollapse",
         "image"=>"HEROS-BorderCollapse.png",
-        "url"=>"supermachin3.example.com",
+        "url"=>"weraw.nathantosoni.ch",
       ),
 			array(
         "name" => "Opacity",

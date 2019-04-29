@@ -9,6 +9,9 @@ function weraw_style_parent() {
 	// enqueue parent styles
 	wp_enqueue_style('atomic-blocks-parent-theme', get_template_directory_uri() .'/style.css');
 
+	// enqueue parent styles
+	wp_enqueue_style('style-heros', get_stylesheet_directory_uri() .'/style-heros.css');
+
 	//chargement de la typo depuis google fonts
 	wp_enqueue_style('googlefonts-weraw', 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
 
