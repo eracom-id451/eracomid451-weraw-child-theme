@@ -40,7 +40,7 @@
 
           // echo '<h2>'. $nom_ligue .':</h2>';
           ?>
-          <h2>Coéquipier de ligue</h2>
+          <h2 class="coequipier">Coéquipier de ligue</h2>
           <ul class="trombi ligue">
           <?php
 
@@ -67,13 +67,13 @@
         ?>
 
       <aside>
-      <h2>Les autres héros</h2>
-      <?php 
+      <h2 class="lesautres">Les autres héros</h2>
+      <?php
 
       // afficher tous les autres...
-      // combiner 
+      // combiner
       $all_heroes = array();
-    
+
       foreach ($weraw_ligues as $nom_ligue => $ligue) {
         if ( is_array( $ligue ) ) {
           $all_heroes = array_merge($all_heroes, $ligue);
@@ -84,7 +84,7 @@
         foreach ($all_heroes as $i => $perso) {
 
             if( !in_array( $perso["url"], $bypass ) ) {
-                echo '<li>
+                echo '<li class="ligue-'.strtolower($nom_ligue).'">
                 <a href="https://'.$perso["url"].'">
                   <div class="losange">
                     <img src="'. get_stylesheet_directory_uri().'/medias/heros/'.$perso["image"].'" alt="Super hero-UN">
