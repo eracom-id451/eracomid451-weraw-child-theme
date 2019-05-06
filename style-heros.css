@@ -31,6 +31,10 @@ body {
     object-fit: contain;
     }
 
+    .ligue-hybrid .infos h3 {
+        color: blue;
+    }
+
     .infos h3 {
       color: #7EC081;
     }
