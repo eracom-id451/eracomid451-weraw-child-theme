@@ -52,6 +52,11 @@ function weraw_ligues() {
 				"name" => "Wand",
 				"image"=>"HEROS-wand.png",
 				"url"=>"hero.eduardo-espinoza.ch",
+			),
+			array(
+				"name" => "Lasso",
+				"image"=>"HEROS-lasso.png",
+				"url"=>"super.ugodalpont.ch",
 			)
 		),
   );
