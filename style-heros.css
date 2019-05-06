@@ -38,6 +38,9 @@ body {
     .ligue-hybrid .infos h3 {
         color: #65C0C9;
     }
+  .ligue-doctype .infos h3 {
+        color: #D85440;
+    }
 
     @media screen and (min-width: 300px) {
       .main {
