@@ -6,7 +6,7 @@ Author: ID451
 Author URI: https://github.com/eracom-id451
 Template: atomic-blocks
 Description: Theme pour le site Weraw
-Version: 0.0.10+build20190408
+Version: 0.0.11+build20190506c
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -16,8 +16,21 @@ body .site-footer {
   font-family: 'Inconsolata', monospace;
 }
 
+body,
 body.ligue-appengers {
 	background: linear-gradient(167.87deg, #201F1E 33.43%, #354334 68.39%, #7EC081 155.6%);
+}
+
+body.ligue-hybrid {
+	background: linear-gradient(167.87deg, #201F1E 33.43%, #652116 68.39%, #D85440 155.6%);
+}
+
+body.ligue-doctype {
+	background: linear-gradient(167.87deg, #201F1E 33.43%, #376D73 68.39%, #65C0C9 155.6%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF9DB;
 }
 
 h1.entry-title,
@@ -26,6 +39,14 @@ h2.entry-title,
 h3.comments-title,
 h3.comment-reply-title {
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.entry-title {
+  display: none;
+}
+
+div.menu {
+  display: none;
 }
 
 .site-title-wrap {

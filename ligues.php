@@ -4,20 +4,10 @@ function weraw_ligues() {
 
 	$weraw_ligues = array(
     "Appengers" => array(
-      array(
-        "name" => "CaptainMalware", // le nom du personnage
-        "image"=>"HEROS-malwear.png", // placer l'image dans medias/vignettes, format x sur x.
-        "url"=>"supermachin.example.com", // sans le https://
-      ),
-			array(
-        "name" => "Hackerman",
-        "image"=>"HEROS-hackerman.png",
-        "url"=>"supermachin3.example.com",
-      ),
 			array(
         "name" => "Troisdé",
         "image"=>"HEROS-troisde.png",
-        "url"=>"supermariusparisod.local",
+        "url"=>"super.mariusparisod.ch",
       ),
       array(
         "name" => "Afterburner",
@@ -62,6 +52,11 @@ function weraw_ligues() {
 				"name" => "Wand",
 				"image"=>"HEROS-wand.png",
 				"url"=>"hero.eduardo-espinoza.ch",
+			),
+			array(
+				"name" => "Lasso",
+				"image"=>"HEROS-lasso.png",
+				"url"=>"super.ugodalpont.ch",
 			)
 		),
   );
