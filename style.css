@@ -45,6 +45,10 @@ h3.comment-reply-title {
   display: none;
 }
 
+div.menu {
+  display: none;
+}
+
 .site-title-wrap {
   background-image: url(medias/logo_weraw.svg);
   background-repeat: no-repeat;
