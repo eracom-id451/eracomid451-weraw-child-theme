@@ -41,6 +41,10 @@ h3.comment-reply-title {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.entry-title {
+  display: none;
+}
+
 .site-title-wrap {
   background-image: url(medias/logo_weraw.svg);
   background-repeat: no-repeat;
