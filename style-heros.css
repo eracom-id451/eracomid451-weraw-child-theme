@@ -150,6 +150,12 @@ body {
        color: white;
     }
     .super-pouvoir h3 {
-      color: lightgreen;
+      color: #7EC081;
+    } 
+	ligue-doctype .super-pouvoir h3 {
+      color: #D85440;
+    }
+	ligue-hybrid .super-pouvoir h3 {
+      color: #65C0C9;
     }
     @media screen and (max-width: 600px) {}
