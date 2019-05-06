@@ -110,13 +110,25 @@ body {
     .target::before{
       width:15px;
       height:15px;
-      background-color: green;
+      background-color: #7EC081;
       transform: rotate(45deg);
     border: solid 6px;
-    box-shadow: 0 0 0 6px green ;
+    box-shadow: 0 0 0 6px #7EC081 ;
     content:"";
     display: block;
      transition: all 0.3s;
+    }
+  .ligue-doctype .target::before{
+     
+      background-color: #D85440;
+	  box-shadow: 0 0 0 6px #D85440 ;
+  
+    }
+	.ligue-hybrid .target::before{
+     
+      background-color: #65C0C9;
+	  box-shadow: 0 0 0 6px #65C0C9 ;
+  
     }
     .target:hover::before{
       transform: rotate(0deg);
